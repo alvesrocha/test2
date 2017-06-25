@@ -1,14 +1,18 @@
-server:
-  address: 127.0.0.1
-  port: 9000
 security:
-  sessions: NEVER
+  user:
+    password: password
 spring:
   session:
     store-type: redis
   redis:
     host: 127.0.0.1
     port: 6379
+zuul:
+  routes:
+    resource:
+      path: /resource/**
+      url: http://localhost:9000
+      sensitive-headers:
 logging:
   level:
     org.springframework.security: DEBUG

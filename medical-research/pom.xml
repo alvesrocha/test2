@@ -11,6 +11,7 @@
 	<modules>
 		<module>medical-research-ui</module>
 		<module>medical-research-resource</module>
+		<module>medical-research-nosql-data</module>
 	</modules>
 
 	<build>

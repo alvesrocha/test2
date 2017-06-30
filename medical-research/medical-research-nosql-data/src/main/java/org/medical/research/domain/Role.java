@@ -1,14 +1,16 @@
-package org.medical.research.domain.security;
+package org.medical.research.domain;
 
 import java.util.Set;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.index.Indexed;
 
 public class Role {
 
 	@Id
     private Long id;
 	
+	@Indexed
 	private String name;
 	
 	private Set<UserGroup> userGroups;

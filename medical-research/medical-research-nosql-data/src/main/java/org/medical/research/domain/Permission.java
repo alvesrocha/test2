@@ -1,4 +1,4 @@
-package org.medical.research.domain.security;
+package org.medical.research.domain;
 
 import java.util.Set;
 

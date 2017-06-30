@@ -1,3 +1,5 @@
+server:
+  port: 9000
 security:
   user:
     password: password
@@ -7,12 +9,9 @@ spring:
   redis:
     host: 127.0.0.1
     port: 6379
-zuul:
-  routes:
-    resource:
-      path: /resource/**
-      url: http://localhost:9000
-      sensitive-headers:
+  data:
+    mongodb:
+      uri: mongodb://localhost/mongodb
 logging:
   level:
     org.springframework.security: DEBUG
